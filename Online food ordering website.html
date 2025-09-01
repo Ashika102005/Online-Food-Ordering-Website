@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Site - Order Your Favorite Food</title>
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffecd1;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4500;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ff6347;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Food Listing */
+        .food-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .food-item {
+            width: 300px;
+            background-color: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .food-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .order-btn {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .order-btn:hover {
+            background-color: #d63400;
+        }
+
+        /* Discount Section */
+        .discount {
+            text-align: center;
+            background-color: #ffd700;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Review Section */
+        .review-section {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .review-box {
+            background-color: white;
+            padding: 15px;
+            margin: 15px auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer (Customer Support) */
+        .footer {
+            text-align: center;
+            background-color: #ff6347;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Discounts</a>
+        <a href="#">Reviews</a>
+        <a href="#">Support</a>
+    </div>
+
+    <h1>Welcome to Foodie Site</h1>
+
+    <!-- Food Menu -->
+    <div class="container">
+        <div class="food-menu">
+            <div class="food-item">
+                <img src="https://source.unsplash.com/300x200/?biryani,food" alt="Biryani">
+                <h3>Chicken Biryani</h3>
+                <p>₹180 | ⭐ 4.5</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="https://source.unsplash.com/300x200/?dosa,food" alt="Dosa">
+                <h3>Masala Dosa</h3>
+                <p>₹90 | ⭐ 4.7</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="https://source.unsplash.com/300x200/?paneer,food" alt="Paneer">
+                <h3>Paneer Butter Masala</h3>
+                <p>₹220 | ⭐ 4.6</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discount Section -->
+    <div class="discount">
+        🎉 Get 20% Off on Orders Above ₹500! Use Code: FOODIE20 🎉
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-section">
+        <h2>Customer Reviews</h2>
+        <div class="review-box">
+            <p><strong>Ashika S.S.</strong> ⭐⭐⭐⭐⭐</p>
+            <p>"Amazing food! Loved the biryani and dosa. Fast delivery!"</p>
+        </div>
+        <div class="review-box">
+            <p><strong>Rahul Kumar</strong> ⭐⭐⭐⭐</p>
+            <p>"Great taste but delivery took some time."</p>
+        </div>
+        <div class="review-box">
+            <p><strong>Neha Sharma</strong> ⭐⭐⭐⭐⭐</p>
+            <p>"Highly recommended! Paneer butter masala was delicious!"</p>
+        </div>
+    </div>
+
+    <!-- Footer (Customer Support) -->
+    <div class="footer">
+        📞 Need Help? Call Us: +91 8903717506 | Email: support@foodiesite.com
+    </div>
+
+</body>
+</html>
